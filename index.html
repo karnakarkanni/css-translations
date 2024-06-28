@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-left: 40%;
+        margin-top: 200px;
+     
+        
+
+       
+    } 
+    .k{
+        position:absolute;
+        margin-top:-80px;
+
+      
+    }
+
+    button:hover{
+        background-color: blue;
+        cursor: pointer;
+
+    } 
+   
+    .k2:hover~.p{
+        transition: transform 0.5s;
+        transform: rotate(50deg);
+
+    }
+    #k1:hover~.p{
+        
+        transform: translate(30px);
+
+    }
+    .k3:hover~.p{
+        
+        transform:scalex(2);
+
+    }
+    .k4:hover~.p{
+        
+        transform:skew(30deg);
+
+    }
+
+
+    img{
+            border-radius: 10px;
+            border-style:solid;
+            margin-top: 10%;
+            margin-bottom: 8px;
+            position: relative;
+            transition: all;
+            
+    } 
+       
+  
+
+</style>
+<body>
+    <div class="k"> 
+        <button id="k1">TRANSLATE</button>
+       
+        <button class="k2">ROTATE</button> 
+     
+         <button class="k3">SCALE</button> 
+           <button class="k4">SCREW</button> 
+   
+    <br>
+    <div class="p">
+        <img src="https://wallpapercave.com/wp/wp2153385.jpg" width="300" height="300">
+    </div>
+</body>
+</html>
